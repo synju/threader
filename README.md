@@ -73,7 +73,7 @@ threader clear
 
 - **No more lost commands due to race conditions.**
 - **Ensures all tasks are written to the log file correctly.**
-- **Even if you restart your terminal, you can still check **``.
+- **Even if you restart your terminal, you can still check.**
 
 ### **💎 4. Simple and Intuitive Syntax**
 
