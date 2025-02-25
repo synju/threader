@@ -1,4 +1,4 @@
-# **🚀 **``** - The Ultimate Terminal Multi-Tasker**
+# **🚀 The Ultimate Terminal Multi-Tasker**
 
 ## **🔥 What is **``**?**
 
