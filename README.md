@@ -12,7 +12,7 @@
 
 ---
 
-## **🎯 How **``** Works**
+## **🎯 How **`threader`** Works**
 
 ### **1️⃣ Start multiple commands in the background**
 
