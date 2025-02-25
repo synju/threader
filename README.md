@@ -25,7 +25,7 @@ threader sleep 10 ++ echo Hello ++ uname -a
 ### **2️⃣ Check running & completed tasks anytime**
 
 ```sh
-threader ls
+threader list
 ```
 
 ✅ Shows **live updates** on which tasks are still running and which have finished.
@@ -78,7 +78,7 @@ threader clear
 ### **💎 4. Simple and Intuitive Syntax**
 
 - Uses `++` as a **natural separator** between commands.
-- `threader ls` is like a **mini task manager** in your terminal.
+- `threader list` is like a **mini task manager** in your terminal.
 
 ### **🔥 5. Lightweight and Fast**
 
