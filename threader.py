@@ -137,12 +137,12 @@ def clear_all():
 
 def main():
 	if len(sys.argv) < 2:
-		print("Usage:\n  threader command1 ++ command2  # Run tasks\n  threader ls  # List all tasks\n  threader clean  # Remove completed tasks\n  threader clear  # Kill all tasks")
+		print("Usage:\n  threader command1 ++ command2  # Run tasks\n  threader list  # List all tasks\n  threader clean  # Remove completed tasks\n  threader clear  # Kill all tasks")
 		return
 
 	action = sys.argv[1]
 
-	if action == "ls":
+	if action == "list":
 		list_tasks()
 		return
 	elif action == "clean":
