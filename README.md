@@ -1,4 +1,4 @@
-# **🚀 The Ultimate Terminal Multi-Tasker**
+# **🚀 The Mini Terminal Multi-Tasker**
 
 ## **🔥 What is **`threader`**?**
 
