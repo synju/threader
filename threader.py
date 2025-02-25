@@ -8,8 +8,24 @@ import signal
 import threading
 import re
 import fcntl
+import shlex
 
 PID_FILE = "/tmp/threader_pids"
+
+
+def parse_commands(full_command):
+	"""Splits the command string on '++' but respects quotes."""
+	commands = []
+	buffer = []
+	for part in shlex.split(full_command, posix=True):
+		if part == "++":  # Treat '++' as a true separator
+			commands.append(" ".join(buffer))
+			buffer = []
+		else:
+			buffer.append(part)
+	if buffer:
+		commands.append(" ".join(buffer))
+	return commands
 
 
 def run_command(cmd):
@@ -54,7 +70,6 @@ def track_completion(pid, cmd, start_time):
 
 			f.flush()
 			fcntl.flock(f, fcntl.LOCK_UN)  # Unlock file
-
 	except ChildProcessError:
 		pass  # Process already completed
 
@@ -80,10 +95,7 @@ def list_tasks():
 
 			# Check if process is still running
 			is_running = os.path.exists(f"/proc/{pid}")
-			if is_running:
-				status = "☐ BUSY"  # Empty checkbox for busy tasks
-			else:
-				status = "✅ DONE"  # Checked checkbox for completed tasks
+			status = "☐ BUSY" if is_running else "✅ DONE"
 
 			formatted_line = f"[{start_time}] (PID: {pid}) [{status}] {cmd}"
 			task_list.append(formatted_line)
@@ -153,7 +165,7 @@ def main():
 		return
 
 	full_command = " ".join(sys.argv[1:])
-	commands = [cmd.strip() for cmd in full_command.split("++") if cmd.strip()]
+	commands = parse_commands(full_command)
 
 	for cmd in commands:
 		run_command(cmd)
