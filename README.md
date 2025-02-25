@@ -67,7 +67,7 @@ threader clear
   ✅ **Start time**\
   ✅ **Unique PID (Process ID)**\
   ✅ **Current status (**``☐ or ✅``**)**
-- **Fast commands like **``** don’t disappear**—they are properly tracked.
+- **Fast commands like **`echo`** don’t disappear**—they are properly tracked.
 
 ### **⚡ 3. Never Misses a Task**
 
