@@ -54,7 +54,7 @@ threader clear
 
 ---
 
-## **💡 Why is **``** So Good?**
+## **💡 Why is **`threader`** So Good?**
 
 ### **🚀 1. Fully Parallel Execution**
 
