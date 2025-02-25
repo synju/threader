@@ -1,6 +1,6 @@
 # **🚀 The Ultimate Terminal Multi-Tasker**
 
-## **🔥 What is **`Threader`**?**
+## **🔥 What is **`threader`**?**
 
 `threader` is a **lightweight, powerful, and user-friendly** terminal tool that allows you to run multiple commands **in parallel** on separate threads—**without blocking your terminal**. Think of it as a **background task manager** that keeps track of running and completed tasks.
 
