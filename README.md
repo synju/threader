@@ -32,8 +32,8 @@ threader list
 
 ```
 [20:00:59] (PID: 645229) [☐ BUSY] sleep 10
-[20:00:59] (PID: 645232) [☑ ✅ DONE] echo Hello
-[20:00:59] (PID: 645234) [☑ ✅ DONE] uname -a
+[20:00:59] (PID: 645232) [✅ DONE] echo Hello
+[20:00:59] (PID: 645234) [✅ DONE] uname -a
 ```
 
 ### **3️⃣ Clean completed tasks**
@@ -66,7 +66,7 @@ threader clear
 - **Every task is recorded with:**\
   ✅ **Start time**\
   ✅ **Unique PID (Process ID)**\
-  ✅ **Current status (**``** or **``**)**
+  ✅ **Current status (**``☐ or ✅``**)**
 - **Fast commands like **``** don’t disappear**—they are properly tracked.
 
 ### **⚡ 3. Never Misses a Task**
